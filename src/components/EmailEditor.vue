@@ -42,7 +42,7 @@ export default {
       if (this.tools) {
         options.tools = this.tools
       }
-      
+
       if (this.appearance) {
         options.appearance = this.appearance
       }
@@ -53,9 +53,9 @@ export default {
 
       /* global unlayer */
       this.editor = unlayer.createEditor({
+        displayMode: 'email',
         ...options,
         id: this.editorId,
-        displayMode: 'email',
         source: {
           name: pkg.name,
           version: pkg.version,
